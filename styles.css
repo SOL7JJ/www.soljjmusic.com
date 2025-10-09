@@ -1,0 +1,360 @@
+/* General Styles  body: Applies a default font, background color, and removes any default margin and padding. */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header header: Centers the text, adds padding, and sets background and text colors.
+media queries: Adjusts padding and font size for screens smaller than 768px and 480px.
+ */
+header {
+  text-align: center;
+  padding: 0px;
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+    font-size: 1.2em;
+  }
+}
+
+/* Navigation nav: Adds a top margin.
+nav button: Styles buttons with background color, text color, padding, margin, font size, cursor style, transition effects, and border radius.
+hover effect: Changes background color and scales up the button on hover.
+media query: Adjusts padding, margin, and font size for screens smaller than 600px.
+*/
+nav {
+  margin-top: 10px;
+}
+
+nav button {
+  background-color: rgb(59, 140, 222);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 10px;
+}
+
+nav button:hover {
+  background-color: #819fc1;
+  transform: scale(1.3);
+}
+
+@media (max-width: 600px) {
+  nav button {
+    padding: 2.5px 5px;
+    margin: 2.5px;
+    font-size: 0.8em;
+  }
+}
+
+/* Main Page #main-page: Centers text and applies padding.
+#main-page h2: Sets font size, bottom margin, and text color for h2 elements within #main-page.
+media queries: Adjust padding and font sizes for screens smaller than 768px and 480px.
+*/
+#main-page {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#main-page h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  #main-page {
+    padding: 40px 15px;
+  }
+
+  #main-page h2 {
+    font-size: 2em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  #main-page {
+    padding: 30px 10px;
+  }
+
+  #main-page h2 {
+    font-size: 1.5em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}
+
+/* H1 Styles h1: Styles h1 elements with font size, centered text, and margin. */
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Mainpage Item .mainpage-item: Styles the item with width, max-width, height, background image, size, position, repeat, border, border radius, box shadow, margin, and padding to maintain aspect ratio.
+media queries: Adjust height and padding for screens wider than 600px and padding for screens smaller than 600px.
+*/
+
+.mainpage-item {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  background-image: url("IMAGES/PHOTO GUITAR6.JPG");
+  background-size: cover;
+  background-position: up;
+  background-repeat: no-repeat;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding-bottom: 56.25%;
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 600px) {
+  .mainpage-item {
+    height: 600px;
+    padding-bottom: 0;
+  }
+}
+
+.mainpage-item:hover {
+  transform: scale(1.09);
+}
+
+/* Adjust image size for small screens */
+@media (max-width: 600px) {
+  .mainpage-item {
+    max-width: 100%; /* Ensure image does not exceed screen width */
+    padding-bottom: 75%; /* Increase aspect ratio padding */
+  }
+}
+
+/* Sections with H2 #streaming-platforms, #social-media: Center text and apply padding.
+h2 within these sections: Sets font size, bottom margin, and text color. */
+#streaming-platforms,
+#social-media {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#streaming-platforms h2,
+#social-media h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Platforms and Social Media Icons .platforms, .social-media-icons: Displays flex, centers content, wraps items, and adds gap.
+.platform, .social-icon: Styles with background color, border radius, box shadow, transition, width, height, flex display, align-items, and justify-content.
+.social-icon: Specific styles for social icons.
+hover effects: Adds scaling on hover for both .platform and .social-icon.
+img within these classes: Sets max width and height.
+social-icon img: Adds border radius and transition for scaling on hover.*/
+.platforms,
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.platform,
+.social-icon {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.platform:hover,
+.social-icon:hover {
+  transform: scale(1.3);
+}
+
+.platform img,
+.social-icon img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.social-icon img {
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+  transform: scale(1.3);
+}
+
+/* Tooltip .tooltip: Styles tooltip with position, background color, text color, padding, border radius, font size, z-index, pointer events, opacity, and transition.
+hover effect: Changes opacity to make the tooltip visible.*/
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.social-icon:hover .tooltip {
+  opacity: 1;
+}
+
+/* Footer footer: Centers text, applies padding, and sets background and text colors.*/
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* About, Event, and Donation Sections #about, #event, #donation: Applies a semi-transparent background, margin, padding, and border radius.*/
+#about,
+#event,
+#donation,
+#videos,
+#news,
+#gallery,
+#contact {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+/* Gallery #gallery: Displays flex, centers content, wraps items, and adds gap.
+.gallery-item: Styles with width, height, background size and position, border, and border radius.*/
+#gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery-item {
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+/* Contact Form #contact form: Displays flex, sets direction to column, and centers content.
+#contact label: Adds top margin.
+#contact input, #contact textarea: Styles with width, padding, margin, background, border, and border radius.
+#contact button: Adds top margin, padding, background, text color, border, border radius, and cursor style.*/
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact label {
+  margin-top: 10px;
+}
+
+#contact input,
+#contact textarea {
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+  background: gray;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: gray;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Video Styles video: Styles video elements with width, max-width, height, border, border radius, box shadow, and margin.
+media queries: Adjust max-width for smaller screens. */
+video {
+  width: 100%;
+  max-width: 800px; /* Maximum width for the video */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #ccc; /* Add border to video */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  margin: 20px auto; /* Center and add margin */
+}
+
+@media (max-width: 768px) {
+  video {
+    max-width: 600px; /* Adjust maximum width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  video {
+    max-width: 100%; /* Full width on very small screens */
+  }
+}
+
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.video-item {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.video-item:hover {
+  transform: scale(1.03);
+}

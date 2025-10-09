@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videos - Artist Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        text-align: center;
+      }
+
+      header {
+        background-color: #4338ca;
+        color: white;
+        padding: 20px 0;
+      }
+
+      nav button {
+        background-color: white;
+        color: #4338ca;
+        border: none;
+        margin: 5px;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      nav button:hover {
+        background-color: #e0e7ff;
+        transform: translateY(-2px);
+      }
+
+      #main-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px;
+        min-height: 80vh;
+      }
+
+      h2 {
+        font-size: 2.2rem;
+        color: #1d4ed8;
+        margin-bottom: 30px;
+      }
+
+      .video-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 20px;
+      }
+
+      .video-item video {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .video-item video:hover {
+        transform: scale(1.03);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      }
+
+      footer {
+        background-color: #4338ca;
+        color: white;
+        padding: 15px;
+        font-size: 0.9rem;
+        margin-top: 30px;
+      }
+
+      @media (max-width: 768px) {
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        nav button {
+          padding: 8px 14px;
+          font-size: 0.9rem;
+        }
+
+        .video-item video {
+          max-width: 90%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Jonathan Elie "Sol JJ"</h1>
+      <nav>
+        <button onclick="location.href='index.html'">HOME</button>
+        <button onclick="location.href='songs.html'">SONGS</button>
+        <button onclick="location.href='videos.html'">VIDEOS</button>
+        <button onclick="location.href='musiclessons.html'">BOOK MUSIC LESSONS</button>
+        <button onclick="location.href='exclusivecontent.html'">EXCLUSIVE CONTENT</button>
+        <button onclick="location.href='chatwithai.html'">CHAT WITH AI</button>
+      </nav>
+    </header>
+
+    <section id="main-page">
+      <h2>My Videos</h2>
+
+      <div class="video-gallery">
+        <div class="video-item">
+          <video controls>
+            <source src="VIDEOS/VIDEO EVENT2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <!-- Add more video items below if needed -->
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Jonathan Elie “Sol JJ” | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artist Portfolio - Sol JJ</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        text-align: center;
+      }
+
+      header {
+        background-color: #4338ca;
+        color: white;
+        padding: 20px 0;
+      }
+
+      nav button {
+        background-color: white;
+        color: #4338ca;
+        border: none;
+        margin: 5px;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      nav button:hover {
+        background-color: #e0e7ff;
+        transform: translateY(-2px);
+      }
+
+      #main-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px;
+        min-height: 80vh;
+      }
+
+      h2 {
+        font-size: 2.2rem;
+        color: #1d4ed8;
+        margin-bottom: 30px;
+      }
+
+      .mainpage-item {
+        width: 1200px;
+        max-width: 600px;
+        height: 0;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        background-image: url("IMAGES/PHOTO GUITAR6.JPG");
+        background-size: cover;
+        background-position: center; /* fixed from 'up' */
+        background-repeat: no-repeat;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin: 20px auto;
+        transition: transform 0.3s ease;
+      }
+
+      .social-media-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 30px;
+      }
+
+      .social-media-icons img {
+        width: 80px;
+        height: 80px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .social-media-icons img:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      }
+
+      footer {
+        background-color: #4338ca;
+        color: white;
+        padding: 15px;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 768px) {
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        .social-media-icons img {
+          width: 60px;
+          height: 60px;
+        }
+
+        nav button {
+          padding: 8px 14px;
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Jonathan Elie "Sol JJ"</h1>
+      <nav>
+        <button onclick="location.href='index.html'">HOME</button>
+        <button onclick="location.href='songs.html'">SONGS</button>
+        <button onclick="location.href='videos.html'">VIDEOS</button>
+        <button onclick="location.href='musiclessons.html'">BOOK MUSIC LESSONS</button>
+        <button onclick="location.href='exclusivecontent.html'">EXCLUSIVE CONTENT</button>
+        <button onclick="location.href='chatwithai.html'">CHAT WITH AI</button>
+      </nav>
+    </header>
+
+    <section id="main-page">
+      <h2>Guitarist, Pianist, Songwriter, Artist</h2>
+
+      <!-- Guitar photo -->
+      <div class="mainpage-item"></div>
+
+      <h2>Follow Me on Social Media</h2>
+      <div class="social-media-icons">
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="IMAGES/PHOTO INSTAGRAM 2.jpg" alt="Instagram" />
+        </a>
+
+        <a href="https://www.tiktok.com" target="_blank">
+          <img src="IMAGES/PHOTO TIKTOK.jpg" alt="TikTok" />
+        </a>
+
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="IMAGES/PHOTO TWITER.jpg" alt="Twitter" />
+        </a>
+
+        <a href="https://www.pinterest.com" target="_blank">
+          <img src="IMAGES/PHOTO PINTEREST.jpg" alt="Pinterest" />
+        </a>
+
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Jonathan Elie “Sol JJ” | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

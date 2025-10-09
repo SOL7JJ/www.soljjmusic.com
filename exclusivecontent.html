@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exclusive Content - Artist Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        text-align: center;
+      }
+
+      header {
+        background-color: #4338ca;
+        color: white;
+        padding: 20px 0;
+      }
+
+      nav button {
+        background-color: white;
+        color: #4338ca;
+        border: none;
+        margin: 5px;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      nav button:hover {
+        background-color: #e0e7ff;
+        transform: translateY(-2px);
+      }
+
+      #main-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px;
+        min-height: 80vh;
+      }
+
+      h2 {
+        font-size: 2.2rem;
+        color: #1d4ed8;
+        margin-bottom: 30px;
+      }
+
+      .mainpage-item {
+        width: 100%;
+        max-width: 600px;
+        height: 0;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        margin: 20px 0;
+        transition: transform 0.3s ease;
+      }
+
+      .mainpage-item:hover {
+        transform: scale(1.03);
+      }
+
+      footer {
+        background-color: #4338ca;
+        color: white;
+        padding: 15px;
+        font-size: 0.9rem;
+        margin-top: 30px;
+      }
+
+      @media (max-width: 768px) {
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        nav button {
+          padding: 8px 14px;
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Jonathan Elie "Sol JJ"</h1>
+      <nav>
+        <button onclick="location.href='index.html'">HOME</button>
+        <button onclick="location.href='songs.html'">SONGS</button>
+        <button onclick="location.href='videos.html'">VIDEOS</button>
+        <button onclick="location.href='musiclessons.html'">BOOK MUSIC LESSONS</button>
+        <button onclick="location.href='exclusivecontent.html'">EXCLUSIVE CONTENT</button>
+        <button onclick="location.href='chatwithai.html'">CHAT WITH AI</button>
+      </nav>
+    </header>
+
+    <section id="main-page">
+      <h2>Exclusive Content</h2>
+
+      <!-- Guitar photo -->
+      <div class="mainpage-item" style="background-image: url('IMAGES/PHOTO GUITAR6.JPG');"></div>
+
+      <!-- Piano photo -->
+      <div class="mainpage-item" style="background-image: url('IMAGES/PHOTO PIANO3.jpg');"></div>
+
+      <!-- Studio photo -->
+      <div class="mainpage-item" style="background-image: url('IMAGES/PHOTO STUDIO 3.jpg');"></div>
+    </section>
+
+    <footer>
+      <p>© 2025 Jonathan Elie “Sol JJ” | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
