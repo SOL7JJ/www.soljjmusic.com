@@ -59,19 +59,16 @@
       }
 
       .mainpage-item {
-        width: 1200px;
+        width: 100%;
         max-width: 600px;
-        height: 0;
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-        background-image: url("IMAGES/PHOTO GUITAR6.JPG");
-        background-size: cover;
-        background-position: center; /* fixed from 'up' */
-        background-repeat: no-repeat;
-        border: 2px solid #ccc;
+        margin: 20px auto;
+      }
+
+      .mainpage-item img {
+        width: 100%;
+        height: auto;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        margin: 20px auto;
-        transition: transform 0.3s ease;
       }
 
       .social-media-icons {
@@ -137,7 +134,9 @@
       <h2>Guitarist, Pianist, Songwriter, Artist</h2>
 
       <!-- Guitar photo -->
-      <div class="mainpage-item"></div>
+      <div class="mainpage-item">
+        <img src="IMAGES/PHOTO GUITAR6.JPG" alt="Sol JJ Guitar" />
+      </div>
 
       <h2>Follow Me on Social Media</h2>
       <div class="social-media-icons">
