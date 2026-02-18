@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Songs - Artist Portfolio</title>
+    <title>Songs - Sol JJ</title>
 
     <link
       rel="stylesheet"
@@ -12,166 +12,73 @@
       crossorigin="anonymous"
     />
 
-    <style>
-      body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #f8f9fa;
-        margin: 0;
-        text-align: center;
-      }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-      header {
-        background-color: #4338ca;
-        color: white;
-        padding: 20px 0;
-      }
-
-      nav button {
-        background-color: white;
-        color: #4338ca;
-        border: none;
-        margin: 5px;
-        padding: 10px 20px;
-        border-radius: 6px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: 0.3s;
-      }
-
-      nav button:hover {
-        background-color: #e0e7ff;
-        transform: translateY(-2px);
-      }
-
-      #main-page {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 50px 20px;
-        min-height: 80vh;
-      }
-
-      h2 {
-        font-size: 2.2rem;
-        color: #1d4ed8;
-        margin-bottom: 30px;
-      }
-
-      .mainpage-item {
-        width: 100%;
-        max-width: 600px;
-        margin: 20px auto;
-      }
-
-      .mainpage-item img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      }
-
-      .platforms {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 25px;
-        margin-top: 30px;
-      }
-
-      .platforms img {
-        width: 80px;
-        height: 80px;
-        border-radius: 15px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-
-      .platforms img:hover {
-        transform: translateY(-5px) scale(1.05);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-      }
-
-      footer {
-        background-color: #4338ca;
-        color: white;
-        padding: 15px;
-        font-size: 0.9rem;
-      }
-
-      @media (max-width: 768px) {
-        h2 {
-          font-size: 1.8rem;
-        }
-
-        .platforms img {
-          width: 60px;
-          height: 60px;
-        }
-
-        nav button {
-          padding: 8px 14px;
-          font-size: 0.9rem;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/main.js"></script>
   </head>
 
   <body>
     <header>
-      <h1>Jonathan Elie "Sol JJ"</h1>
+      <h1>Solis James</h1>
       <nav>
         <button onclick="location.href='index.html'">HOME</button>
         <button onclick="location.href='songs.html'">SONGS</button>
         <button onclick="location.href='videos.html'">VIDEOS</button>
         <button onclick="location.href='musiclessons.html'">BOOK MUSIC LESSONS</button>
+    
       </nav>
     </header>
 
     <section id="main-page">
       <h2>Listen to My Music</h2>
 
-      <!-- Music cover image -->
       <div class="mainpage-item">
         <img src="IMAGES/PHOTO GUITAR6.JPG" alt="Sol JJ Music Cover" />
       </div>
 
-      <div class="section-content">
-        <h2>Available On</h2>
-        <div class="platforms">
-          <a href="https://www.spotify.com" target="_blank">
-            <img src="IMAGES/PHOTO SPOTIFY.jpg" alt="Spotify" />
-          </a>
-          <a href="https://www.apple.com/apple-music/" target="_blank">
-            <img src="IMAGES/PHOTO APPLE MUSIC 0.jpg" alt="Apple Music" />
-          </a>
-          <a href="https://www.youtube.com/music" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Music" />
-          </a>
-          <a href="https://music.amazon.com/" target="_blank">
-            <img src="IMAGES/PHOTO AMAZON MUSIC.jpg" alt="Amazon Music" />
-          </a>
-          <a href="https://soundcloud.com/" target="_blank">
-            <img src="IMAGES/PHOTO SOUNDCLOUD.jpg" alt="SoundCloud" />
-          </a>
-          <a href="https://www.tidal.com/" target="_blank">
-            <img src="IMAGES/PHOTO TIDAL MUSIC.jpg" alt="Tidal" />
-          </a>
-          <a href="https://www.deezer.com/" target="_blank">
-            <img src="IMAGES/PHOTO DEEZER.jpg" alt="Deezer" />
-          </a>
-          <a href="https://bandcamp.com/" target="_blank">
-            <img src="IMAGES/PHOTO BAND CAMP.jpg" alt="Bandcamp" />
-          </a>
-          <a href="https://qobuz.com/" target="_blank">
-            <img src="IMAGES/PHOTO QOBUZ.jpg" alt="Qobuz" />
-          </a>
-        </div>
+      <h2>Available On</h2>
+      <div class="platforms">
+        <a href="https://www.spotify.com" target="_blank" rel="noreferrer">
+          <img src="IMAGES/PHOTO SPOTIFY.jpg" alt="Spotify" />
+        </a>
+        <a href="https://www.apple.com/apple-music/" target="_blank" rel="noreferrer">
+          <img src="IMAGES/PHOTO APPLE MUSIC 0.jpg" alt="Apple Music" />
+        </a>
+        <a href="https://www.youtube.com/music" target="_blank" rel="noreferrer">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
+            alt="YouTube Music"
+          />
+        </a>
+        <a href="https://music.amazon.com/" target="_blank" rel="noreferrer">
+          <img src="IMAGES/PHOTO AMAZON MUSIC.jpg" alt="Amazon Music" />
+        </a>
+        <a href="https://soundcloud.com/" target="_blank" rel="noreferrer">
+          <img src="IMAGES/PHOTO SOUNDCLOUD.jpg" alt="SoundCloud" />
+        </a>
+        <a href="https://www.tidal.com/" target="_blank" rel="noreferrer">
+          <img src="IMAGES/PHOTO TIDAL MUSIC.jpg" alt="Tidal" />
+        </a>
+        <a href="https://www.deezer.com/" target="_blank" rel="noreferrer">
+          <img src="IMAGES/PHOTO DEEZER.jpg" alt="Deezer" />
+        </a>
+        <a href="https://bandcamp.com/" target="_blank" rel="noreferrer">
+          <img src="IMAGES/PHOTO BAND CAMP.jpg" alt="Bandcamp" />
+        </a>
+        <a href="https://qobuz.com/" target="_blank" rel="noreferrer">
+          <img src="IMAGES/PHOTO QOBUZ.jpg" alt="Qobuz" />
+        </a>
       </div>
     </section>
 
     <footer>
-      <p>© 2025 Jonathan Elie “Sol JJ” | All Rights Reserved</p>
+      <p>© 2025 Solis James | All Rights Reserved</p>
     </footer>
   </body>
 </html>
